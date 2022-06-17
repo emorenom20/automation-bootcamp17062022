@@ -1,4 +1,3 @@
----
 # This code is licensed from CircleCI to the user under the MIT license.
 # See here for details: https://circleci.com/developer/orbs/licensing
 version: 2.1
@@ -22,4 +21,5 @@ jobs:
           command: /home/circleci/.local/bin/yamllint .circleci/config.yml
 workflows:
   yamllint-workflow:
-    jobs: yamllint
+    jobs: 
+      - yamllint
